@@ -10,6 +10,6 @@ class HelloController extends Controller
     public function index() 
     {
         $data = ['msg'=>'これはコントローラから渡されたメッセージです。','sato'=>'佐藤'];
-
+        return view('hello.index', $data);
     }
 }
